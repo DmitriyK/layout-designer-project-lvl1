@@ -96,9 +96,11 @@ body {
 
 .img-header {
   position: absolute;
-  top: 50px;
+  top: 55px;
   right: -270px;
   z-index: 0;
+
+  height: 525px;
 }
 
 .img,
@@ -109,8 +111,6 @@ body {
 .img {
   vertical-align: middle;
 }
-
-
 
 .card {
   box-sizing: border-box;
@@ -307,8 +307,8 @@ body {
   margin-bottom: 55px;
 }
 
-.mb-nehative-185 {
-  margin-bottom: -185px;
+.mb-nehative-184 {
+  margin-bottom: -184px;
 }
 
 .pt-100 {
