@@ -1,1 +1,374 @@
 /** CSS STYLE **/
+:root {
+  --primary: #fe8a02;
+  --primary-dark: #42413c;
+  --white: #fff;
+  --translucent-white: #d7ccc0;
+  --light: #f5f4f0;
+  --dark: #2a2626;
+  --translucent-dark: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: 'OpenSans';
+  src: url(../assets/fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: 'OpenSans';
+  src: url(../assets/fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: 'Neucha';
+  src: url(../assets/fonts/Neucha-Regular.ttf);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  font-family: 'Neucha', sans-serif;
+  line-height: 1.2em;
+}
+
+html {
+  color: var(--dark);
+  font-size: 16px;
+  font-family: 'OpenSans', sans-serif;
+  line-height: 1.6em;
+}
+
+body {
+  width: 100vw;
+  height: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+
+  width: 1110px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.col-2 > * {
+  flex-basis: 50%;
+}
+
+.col-3 > * {
+  flex-basis: 33%;
+}
+
+.col-item + .col-item {
+  margin-left: 30px;
+}
+
+.title-header {
+  z-index: 1;
+}
+
+.img-header {
+  position: absolute;
+  top: 50px;
+  right: -270px;
+  z-index: 0;
+}
+
+.img,
+.video {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.img {
+  vertical-align: middle;
+}
+
+.video {
+  margin: 0 auto;
+}
+
+.card {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 24px;
+}
+
+.card:hover {
+  background: var(--primary);
+}
+
+.card:hover > * {
+  color: var(--white);
+}
+
+.verb-title {
+  padding: 5px 0 5px 10px;
+}
+
+.btn-more {
+  display: inline-block;
+  padding: 12px 24px;
+}
+
+.btn-subscribe {
+  width: 70px;
+  height: 50px;
+}
+
+.btn-more:hover,
+.btn-subscribe:hover {
+  background: #ea7600;
+}
+
+.btn-subscribe::before {
+  content: url('../assets/images/send.svg');
+}
+
+.input-subscribe {
+  padding: 15px;
+}
+
+.input-subscribe::placeholder {
+  color: #757575;
+
+  opacity: 0.2;
+}
+
+.input-subscribe:focus {
+  outline: none;
+}
+
+.bg-effect {
+  position: relative;
+
+  overflow-x: hidden;
+}
+
+.bg-effect::before {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url('../assets/images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 10%;
+
+  content: '';
+}
+
+.d-flex {
+  display: flex;
+}
+
+.column-flex {
+  flex-direction: column;
+}
+
+.grow-1 {
+  flex-grow: 1;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.content-middle {
+  justify-content: center;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-34 {
+  font-size: 34px;
+}
+
+.fs-52 {
+  font-size: 52px;
+}
+
+.fs-64 {
+  font-size: 64px;
+}
+
+.l-height-1 {
+  line-height: 1;
+}
+
+.l-height-1-2 {
+  line-height: 1.2em;
+}
+
+.neucha {
+  font-family: 'Neucha', sans-serif;
+}
+
+.open-sans {
+  font-family: 'OpenSans', sans-serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.decoration-none {
+  text-decoration: none;
+}
+
+.border-none {
+  border: none;
+}
+
+.mt-9 {
+  margin-top: 9px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-55 {
+  margin-top: 55px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mt-185 {
+  margin-top: 185px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-55 {
+  margin-bottom: 55px;
+}
+
+.mb-nehative-200 {
+  margin-bottom: -200px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pl-55 {
+  padding-left: 55px;
+}
+
+.pr-55 {
+  padding-right: 55px;
+}
+
+.white {
+  color: var(--white);
+}
+
+.t-white {
+  color: var(--translucent-white);
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.primary-dark {
+  color: var(--primary-dark);
+}
+
+.dark {
+  color: var(--dark);
+}
+
+.translucent-dark {
+  color: var(--translucent-dark);
+}
+
+.brown {
+  color: var(--brown);
+}
+
+.bg-primary {
+  background: var(--primary);
+}
+
+.bg-dark-primary {
+  background: var(--primary-dark);
+}
+
+.bg-light {
+  background: var(--light);
+}
+
+.bg-white {
+  background: var(--white);
+}
+
+.bg-brown {
+  background: var(--brown);
+}
+
+.bg-transperent {
+  background: transparent;
+}
