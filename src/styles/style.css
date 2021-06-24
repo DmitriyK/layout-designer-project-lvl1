@@ -1,4 +1,4 @@
-/** CSS STYLE **/
+/*  Основные цвета  */
 :root {
   --primary: #fe8a02;
   --primary-dark: #42413c;
@@ -11,6 +11,7 @@
   --blue: #1085c5;
 }
 
+/* Шрифты */
 @font-face {
   font-weight: normal;
   font-family: 'OpenSans';
@@ -29,6 +30,7 @@
   src: url(../assets/fonts/Neucha-Regular.ttf);
 }
 
+/* Сброс стилей */
 *,
 *::before,
 *::after {
@@ -38,11 +40,11 @@
 h1,
 h2,
 h3,
-p,
 body {
   margin: 0;
 }
 
+/* Основные параметры */
 h1,
 h2,
 h3 {
@@ -63,32 +65,78 @@ h3 {
   font-size: 34px;
 }
 
-html {
-  color: var(--dark);
-  font-size: 16px;
-  font-family: 'OpenSans', sans-serif;
-  line-height: 1.6em;
-}
-
 body {
-  width: 100vw;
-  height: 100vw;
+  min-height: 100vh;
+
+  color: var(--dark);
+  font: 16px/1.6em 'OpenSans', sans-serif;
 }
 
 .container {
+  position: relative;
+
   width: 1110px;
+
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.column-flex {
+  flex-direction: column;
 }
 
 .col-2 > * {
   flex-basis: 50%;
 }
 
-.col-3 > * {
-  flex-basis: 33%;
+.col-item + .col-item {
+  margin-left: 30px;
 }
 
-.card {
-  height: 100%;
+.flex-grow {
+  flex-grow: 1;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.nav-cards-12 {
+  grid-gap: 20px 30px;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.span-4 {
+  grid-column: span 4;
+}
+
+/* Заголовки */
+.sub-title {
+  font: 24px 'Neucha', sans-serif;
+}
+
+.title-definition {
+  font: bold 14px 'OpenSans', sans-serif;
+
+  text-transform: uppercase;
+}
+
+.description-title {
+  font: 34px/1.2em 'Neucha', sans-serif;
+}
+
+.card-item {
+  padding: 24px;
+
+  text-decoration: none;
+}
+
+.num-card {
+  font: 64px/1em 'Neucha', sans-serif;
 }
 
 .btn-more {
@@ -125,18 +173,6 @@ body {
   z-index: 0;
 }
 
-.d-flex {
-  display: flex;
-}
-
-.column-flex {
-  flex-direction: column;
-}
-
-.flex-grow-1 {
-  flex-grow: 1;
-}
-
 .vertical-align-middle {
   vertical-align: middle;
 }
@@ -151,10 +187,6 @@ body {
 
 .justify-content-center {
   justify-content: center;
-}
-
-.col-item + .col-item {
-  margin-left: 30px;
 }
 
 .mt-9 {
@@ -209,8 +241,12 @@ body {
   margin-bottom: -184px;
 }
 
-.m-auto {
-  margin: auto;
+.ml-30 {
+  margin-left: 30px;
+}
+
+.my-55 {
+  margin: 55px 0;
 }
 
 .cognitive-biases-section h3 {
@@ -237,6 +273,7 @@ body {
   padding: 24px;
 }
 
+/* Типографика */
 .fs-12 {
   font-size: 12px;
 }
@@ -257,8 +294,16 @@ body {
   font-size: 52px;
 }
 
+.fs-60 {
+  font-size: 60px;
+}
+
 .fs-64 {
   font-size: 64px;
+}
+
+.fs-72 {
+  font-size: 72px;
 }
 
 .l-height-1 {
@@ -269,11 +314,11 @@ body {
   line-height: 1.2em;
 }
 
-.neucha {
+.ff-neucha {
   font-family: 'Neucha', sans-serif;
 }
 
-.open-sans {
+.ff-open-sans {
   font-family: 'OpenSans', sans-serif;
 }
 
@@ -289,11 +334,12 @@ body {
   border: none;
 }
 
+/* Цвет */
 .white {
   color: var(--white);
 }
 
-.t-white {
+.translucent-white {
   color: var(--translucent-white);
 }
 
@@ -317,6 +363,7 @@ body {
   color: var(--brown);
 }
 
+/* Фон */
 .bg-primary {
   background: var(--primary);
 }
@@ -342,6 +389,8 @@ body {
 }
 
 .bg-effect {
+  position: relative;
+
   overflow-x: hidden;
 }
 
@@ -359,6 +408,7 @@ body {
   content: '';
 }
 
+/* Свойста псевдо-элементов и псевдо-классов */
 .btn-subscribe::before {
   content: url('../assets/images/send.svg');
 }
@@ -367,11 +417,11 @@ body {
   background: #ea7600;
 }
 
-.card:hover {
+.card-item:hover {
   background: var(--primary);
 }
 
-.card:hover > * {
+.card-item:hover > * {
   color: var(--white);
 }
 
@@ -385,7 +435,6 @@ body {
   outline: none;
 }
 
-.img,
-.video {
+.filter {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
