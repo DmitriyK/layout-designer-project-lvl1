@@ -237,12 +237,16 @@ body {
   margin-bottom: 55px;
 }
 
-.mb-nehative-184 {
-  margin-bottom: -184px;
+.mb-nehative-207 {
+  margin-bottom: -207px;
 }
 
 .ml-30 {
   margin-left: 30px;
+}
+
+.my-30 {
+  margin: 30px 0;
 }
 
 .my-55 {
