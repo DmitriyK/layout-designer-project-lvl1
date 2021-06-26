@@ -198,10 +198,6 @@ body {
   margin-top: 16px;
 }
 
-.mt-20 {
-  margin-top: 20px;
-}
-
 .mt-30 {
   margin-top: 30px;
 }
@@ -210,12 +206,8 @@ body {
   margin-top: 40px;
 }
 
-.mt-55 {
-  margin-top: 55px;
-}
-
-.mt-60 {
-  margin-top: 60px;
+.mt-76 {
+  margin-top: 76px;
 }
 
 .mt-100 {
@@ -230,24 +222,8 @@ body {
   margin-bottom: 20px;
 }
 
-.mb-40 {
-  margin-bottom: 40px;
-}
-
-.mb-55 {
-  margin-bottom: 55px;
-}
-
 .mb-nehative-207 {
   margin-bottom: -207px;
-}
-
-.ml-30 {
-  margin-left: 30px;
-}
-
-.my-1em {
-  margin: 1em 0;
 }
 
 .my-30 {
