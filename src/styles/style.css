@@ -1,4 +1,4 @@
-/*  Основные цвета  */
+/*  Main colors */
 :root {
   --primary: #fe8a02;
   --primary-dark: #42413c;
@@ -11,7 +11,7 @@
   --blue: #1085c5;
 }
 
-/* Шрифты */
+/* Fonts */
 @font-face {
   font-weight: normal;
   font-family: 'OpenSans';
@@ -30,7 +30,7 @@
   src: url(../assets/fonts/Neucha-Regular.ttf);
 }
 
-/* Сброс стилей */
+/* Resetting styles */
 *,
 *::before,
 *::after {
@@ -45,7 +45,7 @@ body {
   margin: 0;
 }
 
-/* Основные параметры */
+/* Main style */
 h1,
 h2,
 h3 {
@@ -73,6 +73,7 @@ body {
   font: 16px/1.6em 'OpenSans', sans-serif;
 }
 
+/* Structure */
 .container {
   position: relative;
 
@@ -115,12 +116,14 @@ body {
   grid-column: span 4;
 }
 
-/* Заголовки */
+/* Titles */
 .sub-title {
   font: 24px 'Neucha', sans-serif;
 }
 
 .title-definition {
+  padding: 5px 0 5px 10px;
+
   font: bold 14px 'OpenSans', sans-serif;
 
   text-transform: uppercase;
@@ -130,16 +133,16 @@ body {
   font: 34px/1.2em 'Neucha', sans-serif;
 }
 
+/* Nav cards */
 .card-item {
   padding: 24px;
-
-  text-decoration: none;
 }
 
 .num-card {
   font: 64px/1em 'Neucha', sans-serif;
 }
 
+/* Buttons */
 .btn-more {
   display: inline-block;
   padding: 12px 24px;
@@ -150,6 +153,7 @@ body {
   height: 50px;
 }
 
+/* Positioning */
 .position-absolute {
   position: absolute;
 }
@@ -174,22 +178,19 @@ body {
   z-index: 0;
 }
 
-.vertical-align-middle {
-  vertical-align: middle;
-}
-
-.text-align-center {
+.text-center {
   text-align: center;
 }
 
-.align-items-center {
-  align-items: center;
+.vertical-middle {
+  vertical-align: middle;
 }
 
 .justify-content-center {
   justify-content: center;
 }
 
+/* Margins, Paddings */
 .mt-9 {
   margin-top: 9px;
 }
@@ -234,10 +235,6 @@ body {
   margin: 55px 0;
 }
 
-.cognitive-biases-section h3 {
-  padding: 5px 0 5px 10px;
-}
-
 .pt-100 {
   padding-top: 100px;
 }
@@ -258,7 +255,7 @@ body {
   padding: 24px;
 }
 
-/* Типографика */
+/* Typography */
 .fs-12 {
   font-size: 12px;
 }
@@ -291,14 +288,6 @@ body {
   font-size: 72px;
 }
 
-.l-height-1 {
-  line-height: 1em;
-}
-
-.l-height-1-2 {
-  line-height: 1.2em;
-}
-
 .ff-neucha {
   font-family: 'Neucha', sans-serif;
 }
@@ -315,11 +304,12 @@ body {
   text-decoration: none;
 }
 
+/* Border */
 .border-none {
   border: none;
 }
 
-/* Цвет */
+/* Colors */
 .white {
   color: var(--white);
 }
@@ -348,7 +338,7 @@ body {
   color: var(--brown);
 }
 
-/* Фон */
+/* Backgrounds */
 .bg-primary {
   background: var(--primary);
 }
@@ -393,7 +383,7 @@ body {
   content: '';
 }
 
-/* Свойста псевдо-элементов и псевдо-классов */
+/* Pseudo-element , pseudo-class */
 .btn-subscribe::before {
   content: url('../assets/images/send.svg');
 }
@@ -420,6 +410,7 @@ body {
   outline: none;
 }
 
+/* Effects, Animation */
 .filter {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
