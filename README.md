@@ -3,7 +3,7 @@
 
 This repository is created and maintained by the team and the community of Hexlet, an educational project. [Read more about Hexlet (in Russian)](https://ru.hexlet.io/programs/layout-designer/projects/58).
 
-# HTML/CSS Boilerplate
+# HTML/CSS Cognitive Distortions
 
 ## Setup
 
